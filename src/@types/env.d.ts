@@ -8,6 +8,7 @@ interface ImportMetaEnv {
   readonly HOST?: string;
   readonly HTTPS?: BooleanType;
   readonly VITE_APP_NODE_ENV: EnvType;
+  readonly VITE_APP_GITHUB_API_URL: string;
   readonly VITE_APP_ENCRYPT_STORAGE_PREFIX: string;
   readonly VITE_APP_ENCRYPT_STORAGE_SECRET_KEY: string;
 }

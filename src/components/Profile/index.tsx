@@ -3,6 +3,7 @@
 import buildingIcon from '@/assets/images/building-icon.svg';
 import followersIcon from '@/assets/images/followers-icon.svg';
 import githubIcon from '@/assets/images/github-logo.svg';
+import { Link } from '@/components';
 
 import {
   ProfileContainer,
@@ -11,6 +12,7 @@ import {
   Title,
   TextContainer,
   Description,
+  TitleContainer,
   OrganizationContainer,
   OrganizationInfoContainer,
 } from './styles';
@@ -21,7 +23,17 @@ export function Profile(): JSX.Element {
       <ProfileImage src="https://github.com/michelonsouza.png" />
       <InfoContainer>
         <TextContainer>
-          <Title>Michelon Souza</Title>
+          <TitleContainer>
+            <Title>Michelon Souza</Title>
+            <Link
+              href="https://github.com/michelonsouza"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Github Michelon Souza"
+            >
+              GIHUB
+            </Link>
+          </TitleContainer>
           <Description>
             Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
             viverra massa quam dignissim aenean malesuada suscipit. Nunc,

@@ -7,7 +7,7 @@ export const ProfileContainer = styled.section`
   box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.common.profile};
   width: 864px;
-  max-width: calc(100% - 1.5rem);
+  max-width: calc(100% - 3rem);
   padding: 2rem 2.5rem;
   margin: 0 auto;
   margin-top: -5.5rem;
@@ -77,17 +77,25 @@ export const OrganizationInfoContainer = styled.div`
   }
 
   & > span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: ${({ theme }) => theme.typography.subtitle};
   }
+`;
+
+export const TitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 OrganizationInfoContainer.displayName = 'OrganizationInfoContainer';
 OrganizationContainer.displayName = 'OrganizationContainer';
 ProfileContainer.displayName = 'ProfileContainer';
+TitleContainer.displayName = 'TitleContainer';
 InfoContainer.displayName = 'InfoContainer';
-ProfileImage.displayName = 'ProfileImage';
 InfoContainer.displayName = 'InfoContainer';
 TextContainer.displayName = 'TextContainer';
+ProfileImage.displayName = 'ProfileImage';
 Description.displayName = 'Description';
 Title.displayName = 'Title';
